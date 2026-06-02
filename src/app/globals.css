@@ -1,0 +1,414 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   Cosmic Knockouts - Global Styles
+   ============================================================================ */
+
+/* --- Custom Properties --- */
+
+:root {
+  --color-primary: #00f0ff;
+  --color-secondary: #ff00aa;
+  --color-accent: #ffcc00;
+  --color-bg: #0a0a1a;
+  --color-surface: #151530;
+  --color-text: #e8e8f0;
+  --color-text-dim: #8888aa;
+}
+
+@theme inline {
+  --color-primary: #00f0ff;
+  --color-secondary: #ff00aa;
+  --color-accent: #ffcc00;
+  --color-bg: #0a0a1a;
+  --color-surface: #151530;
+}
+
+/* --- Reset & Base --- */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default focus outlines, add custom for keyboard nav */
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* --- Selection Colors --- */
+
+::selection {
+  background: rgba(0, 240, 255, 0.3);
+  color: #fff;
+}
+
+/* --- Scrollbar Hide (for any overflow areas) --- */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* --- Neon Glow Utilities --- */
+
+.glow-cyan {
+  text-shadow:
+    0 0 7px var(--color-primary),
+    0 0 20px var(--color-primary),
+    0 0 42px rgba(0, 240, 255, 0.5);
+}
+
+.glow-magenta {
+  text-shadow:
+    0 0 7px var(--color-secondary),
+    0 0 20px var(--color-secondary),
+    0 0 42px rgba(255, 0, 170, 0.5);
+}
+
+.glow-gold {
+  text-shadow:
+    0 0 7px var(--color-accent),
+    0 0 20px var(--color-accent),
+    0 0 42px rgba(255, 204, 0, 0.5);
+}
+
+.glow-cyan-subtle {
+  text-shadow:
+    0 0 4px rgba(0, 240, 255, 0.6),
+    0 0 12px rgba(0, 240, 255, 0.3);
+}
+
+.glow-magenta-subtle {
+  text-shadow:
+    0 0 4px rgba(255, 0, 170, 0.6),
+    0 0 12px rgba(255, 0, 170, 0.3);
+}
+
+/* Box glow variants */
+.box-glow-cyan {
+  box-shadow:
+    0 0 8px rgba(0, 240, 255, 0.4),
+    0 0 20px rgba(0, 240, 255, 0.2),
+    inset 0 0 8px rgba(0, 240, 255, 0.1);
+}
+
+.box-glow-magenta {
+  box-shadow:
+    0 0 8px rgba(255, 0, 170, 0.4),
+    0 0 20px rgba(255, 0, 170, 0.2),
+    inset 0 0 8px rgba(255, 0, 170, 0.1);
+}
+
+.box-glow-gold {
+  box-shadow:
+    0 0 8px rgba(255, 204, 0, 0.4),
+    0 0 20px rgba(255, 204, 0, 0.2),
+    inset 0 0 8px rgba(255, 204, 0, 0.1);
+}
+
+/* --- Animation Keyframes --- */
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 50%, 90% {
+    transform: translateX(-4px);
+  }
+  30%, 70% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.4);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes particleDrift {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(50px) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes celebrationBurst {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+/* --- Animation Utility Classes --- */
+
+.animate-pulse-glow {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out forwards;
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Staggered animation delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+
+/* --- Game-Specific Utility Classes --- */
+
+.game-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.game-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-hud {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.neon-border {
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  box-shadow:
+    0 0 6px rgba(0, 240, 255, 0.2),
+    inset 0 0 6px rgba(0, 240, 255, 0.05);
+}
+
+.neon-border-magenta {
+  border: 1px solid rgba(255, 0, 170, 0.4);
+  box-shadow:
+    0 0 6px rgba(255, 0, 170, 0.2),
+    inset 0 0 6px rgba(255, 0, 170, 0.05);
+}
+
+.surface-panel {
+  background: linear-gradient(135deg, rgba(21, 21, 48, 0.95), rgba(10, 10, 26, 0.95));
+  backdrop-filter: blur(8px);
+}
+
+/* Stat bar backgrounds */
+.stat-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.stat-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Menu button base */
+.menu-btn {
+  position: relative;
+  padding: 12px 40px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.menu-btn:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow:
+    0 0 12px rgba(0, 240, 255, 0.3),
+    0 0 30px rgba(0, 240, 255, 0.1),
+    inset 0 0 12px rgba(0, 240, 255, 0.05);
+  transform: scale(1.02);
+}
+
+.menu-btn:active {
+  transform: scale(0.98);
+}
+
+.menu-btn.selected {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow:
+    0 0 12px rgba(0, 240, 255, 0.4),
+    0 0 30px rgba(0, 240, 255, 0.15),
+    inset 0 0 12px rgba(0, 240, 255, 0.08);
+}
+
+/* Background particle */
+.bg-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  opacity: 0;
+  animation: particleDrift linear infinite;
+}
