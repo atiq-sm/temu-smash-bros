@@ -2,11 +2,11 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Cosmic Knockouts - Platform Fighter",
+  title: "Temu Smash Bros - Platform Fighter",
   description:
-    "A browser-based platform fighter inspired by the greats. Choose your fighter, master your moves, and knock your opponents into the cosmos!",
+    "Temu Smash Bros is a browser-based platform fighter inspired by the greats. Choose your fighter, master your moves, and knock your opponents off the stage!",
   keywords: ["platform fighter", "fighting game", "browser game", "multiplayer"],
-  authors: [{ name: "Cosmic Knockouts Team" }],
+  authors: [{ name: "Temu Smash Bros Team" }],
 };
 
 export const viewport: Viewport = {

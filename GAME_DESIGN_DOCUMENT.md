@@ -1,4 +1,4 @@
-# Cosmic Knockouts - Game Design Document
+# Temu Smash Bros - Game Design Document
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@
 
 ### Identity
 
-**Title:** Cosmic Knockouts
+**Title:** Temu Smash Bros
 **Genre:** Platform Fighter
 **Platform:** Browser-based (Desktop primary, tablet secondary)
 **Tech Stack:** Next.js, HTML5 Canvas / WebGL, WebSocket
@@ -27,7 +27,7 @@
 
 ### Elevator Pitch
 
-Cosmic Knockouts is a neon-drenched, browser-based platform fighter where six elemental warriors clash across surreal geometric arenas. Built on Next.js, it brings the depth of classic platform fighters to the browser with a distinctive art style, tight controls, and seamless online multiplayer.
+Temu Smash Bros is a neon-drenched, browser-based platform fighter where six elemental warriors clash across surreal geometric arenas. Built on Next.js, it brings the depth of classic platform fighters to the browser with a distinctive art style, tight controls, and seamless online multiplayer.
 
 ### Design Pillars
 
@@ -567,7 +567,7 @@ Full online play supporting all game modes.
 
 ### Art Direction: Neon Geometric
 
-The visual identity of Cosmic Knockouts is built on the "Neon Geometric" aesthetic: characters and environments are composed entirely of geometric shapes (triangles, hexagons, rectangles, circles, crescents) with bold neon outlines and subtle gradient fills.
+The visual identity of Temu Smash Bros is built on the "Neon Geometric" aesthetic: characters and environments are composed entirely of geometric shapes (triangles, hexagons, rectangles, circles, crescents) with bold neon outlines and subtle gradient fills.
 
 ### Character Rendering
 

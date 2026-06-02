@@ -1,5 +1,5 @@
 // ============================================================================
-// Cosmic Knockouts - Particle System
+// Temu Smash Bros - Particle System
 // ============================================================================
 
 import { Particle, ParticleEmitterConfig } from '../core/types';
