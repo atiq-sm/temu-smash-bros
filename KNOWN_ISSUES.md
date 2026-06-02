@@ -1,4 +1,4 @@
-# Cosmic Knockouts - Known Issues
+# Temu Smash Bros - Known Issues
 
 ## How to Use This Document
 

@@ -1,5 +1,5 @@
 // ============================================================================
-// Cosmic Knockouts - SVG-Path-Based Character Renderer
+// Temu Smash Bros - SVG-Path-Based Character Renderer
 // ============================================================================
 // Pure Canvas 2D renderer using Path2D and bezier curves for detailed,
 // unique character silhouettes. Each of the 6 fighters has a completely

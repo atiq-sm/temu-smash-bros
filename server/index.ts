@@ -1,5 +1,5 @@
 // ============================================================================
-// Cosmic Knockouts - WebSocket Game Server
+// Temu Smash Bros - WebSocket Game Server
 // Run with: npx tsx server/index.ts
 // ============================================================================
 

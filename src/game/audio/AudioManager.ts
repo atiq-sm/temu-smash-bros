@@ -1,5 +1,5 @@
 // ============================================================================
-// Cosmic Knockouts - Audio Manager
+// Temu Smash Bros - Audio Manager
 // ============================================================================
 // Fully procedural audio system using the Web Audio API.
 // Every sound effect and music track is synthesized in real-time --
