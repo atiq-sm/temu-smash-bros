@@ -1,4 +1,4 @@
-# Temu Smash Bros - Project Status
+# Cosmic Knockouts - Project Status
 
 ## Current Phase: Phase 1 - Core Engine
 

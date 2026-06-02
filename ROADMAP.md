@@ -1,8 +1,8 @@
-# Temu Smash Bros - Development Roadmap
+# Cosmic Knockouts - Development Roadmap
 
 ## Overview
 
-This document outlines the phased development plan for Temu Smash Bros. Each phase builds on the previous, with clear deliverables and milestones.
+This document outlines the phased development plan for Cosmic Knockouts. Each phase builds on the previous, with clear deliverables and milestones.
 
 ---
 

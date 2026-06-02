@@ -1,5 +1,5 @@
 // ============================================================================
-// Temu Smash Bros - Server Room Management
+// Cosmic Knockouts - Server Room Management
 // ============================================================================
 
 import type { Socket } from 'socket.io';

@@ -1,6 +1,6 @@
-# Temu Smash Bros
+# Cosmic Knockouts
 
-Temu Smash Bros is a browser-based platform fighter built with Next.js, React, and HTML5 Canvas. Original characters, procedural audio, neon geometric art style — entirely AI-generated.
+A browser-based platform fighter built with Next.js, React, and HTML5 Canvas. Original characters, procedural audio, neon geometric art style — entirely AI-generated.
 
 ![Character Select](docs/screenshots/character-select.png)
 ![Gameplay](docs/screenshots/gameplay.png)
