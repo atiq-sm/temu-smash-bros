@@ -1,5 +1,5 @@
 // ============================================================================
-// Temu Smash Bros - Character Definitions
+// Cosmic Knockout - Character Definitions
 // ============================================================================
 
 export interface HitboxData {

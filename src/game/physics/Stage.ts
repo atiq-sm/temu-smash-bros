@@ -1,5 +1,5 @@
 // ============================================================================
-// Temu Smash Bros - Stage Definitions & Renderer
+// Cosmic Knockout - Stage Definitions & Renderer
 // ============================================================================
 
 import { StageData, Platform, LedgePoint, Vector2D } from '../core/types';

@@ -1,5 +1,5 @@
 // ============================================================================
-// Temu Smash Bros - Client-Side Network Manager
+// Cosmic Knockout - Client-Side Network Manager
 // ============================================================================
 
 import { io, Socket } from 'socket.io-client';

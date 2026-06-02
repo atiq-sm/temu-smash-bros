@@ -1,5 +1,5 @@
 // ============================================================================
-// Temu Smash Bros - Stage Definitions
+// Cosmic Knockout - Stage Definitions
 // ============================================================================
 
 import type { Vector2D } from '../core/types';
