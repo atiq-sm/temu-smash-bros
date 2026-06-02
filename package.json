@@ -1,6 +1,6 @@
 {
-  "name": "temu-smash-bros",
-  "description": "Temu Smash Bros is a browser-based platform fighter built with Next.js, React, and HTML5 Canvas.",
+  "name": "cosmic-knockout",
+  "description": "Cosmic Knockout is a browser-based platform fighter built with Next.js, React, and HTML5 Canvas.",
   "version": "0.1.0",
   "private": true,
   "scripts": {

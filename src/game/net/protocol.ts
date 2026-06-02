@@ -1,5 +1,5 @@
 // ============================================================================
-// Temu Smash Bros - Network Protocol Types
+// Cosmic Knockout - Network Protocol Types
 // ============================================================================
 
 import type { InputState } from '../core/types';
